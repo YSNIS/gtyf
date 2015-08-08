@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Get Them You Fools</div>
+                <div class="title">Please Work...</div>
             </div>
         </div>
     </body>
