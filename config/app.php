@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => env('URL'),
+    'url' => 'http://www.getthemyoufools.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'omnxyrteackdszvwrxp0b12qgwovaxzi'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -140,9 +140,9 @@ return [
         /*
          * Application Service Providers...
          */
-        gtyf\Providers\AppServiceProvider::class,
-        gtyf\Providers\EventServiceProvider::class,
-        gtyf\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 

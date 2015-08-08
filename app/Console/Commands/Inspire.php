@@ -1,6 +1,6 @@
 <?php
 
-namespace gtyf\Console\Commands;
+namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

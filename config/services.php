@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => gtyf\User::class,
+        'model'  => App\User::class,
         'key'    => '',
         'secret' => '',
     ],

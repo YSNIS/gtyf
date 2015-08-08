@@ -1,6 +1,6 @@
 <?php
 
-namespace gtyf\Exceptions;
+namespace App\Exceptions;
 
 use Exception;
 use Symfony\Component\HttpKernel\Exception\HttpException;
