@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: gtyf
+        psr4_prefix: gtyf
+        src_path: app
