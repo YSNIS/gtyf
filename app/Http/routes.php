@@ -14,4 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/henchmen', function () {
+    return view('welcome');
+});
 
