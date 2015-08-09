@@ -23,10 +23,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		});
     }
 }]);
-app.controller("HeaderController", function($scope){
+app.controller("HeaderController", ['$scope', function($scope){
 	$scope.title = "Get Them You Fools";
 	$scope.subtitle = "The International Henchmen Database";
-});
+}]);
 app.controller("MainController", ['$scope', '$http', function($scope, $http) {
 	
 	$scope.henchmen = {};
