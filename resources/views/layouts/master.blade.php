@@ -12,16 +12,17 @@
 </head>
 <body ng-app="app">
 	<div class="container">
-		<div class="page-header">
-			@yield('header')
+		<!-- HEADER -->
+		<div class="page-header" ng-include src="'partials/header.blade.php'">
 		</div>
+		<!-- Success Message -->
 		@if (Session::has('success'))
 			<div>class="alert alert-success">
 				{{ Session::get('success') }}
 			</div>
 		@endif
+		<!-- Main View -->
 		<div ng-view></div>
 	</div>
-
 </body>
 </html>

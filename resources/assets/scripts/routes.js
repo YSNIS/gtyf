@@ -1,16 +1,12 @@
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider.when("/",
 		{
-			templateUrl: "partials/test.blade.php",
-			controller: "MainController",
-		}
-	).when ("/henchmen",
-		{
-			templateUrl: "partials/test2.blade.php",
+			templateUrl: "partials/main.blade.php",
 			controller: "MainController",
 		}
 	);
-	//check browser support
+	
+	//Removes # from URL
     if(window.history && window.history.pushState){
 		//$locationProvider.html5Mode(true); will cause an error $location in HTML5 mode requires a  tag to be present! Unless you set baseUrl tag after head tag like so: <head> <base href="/">
 

@@ -5,16 +5,12 @@ var app = angular.module("app", ['ngRoute'], function($interpolateProvider){
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider.when("/",
 		{
-			templateUrl: "partials/test.blade.php",
-			controller: "MainController",
-		}
-	).when ("/henchmen",
-		{
-			templateUrl: "partials/test2.blade.php",
+			templateUrl: "partials/main.blade.php",
 			controller: "MainController",
 		}
 	);
-	//check browser support
+	
+	//Removes # from URL
     if(window.history && window.history.pushState){
 		//$locationProvider.html5Mode(true); will cause an error $location in HTML5 mode requires a  tag to be present! Unless you set baseUrl tag after head tag like so: <head> <base href="/">
 
@@ -27,8 +23,18 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		});
     }
 }]);
-app.controller("MainController", function($scope){
-	$scope.hi = 'hello';
-	$scope.bye = 'bye';
+app.controller("HeaderController", function($scope){
+	$scope.title = "Get Them You Fools";
+	$scope.subtitle = "The International Henchmen Database";
 });
+app.controller("MainController", ['$scope', '$http', function($scope, $http) {
+	
+	$scope.henchmen = {};
+	$http.get('/getHenchmen').
+		then(function(data){
+			$scope.henchmen = data.data;
+		}, function(error){
+			console.log(error);
+		});
+}]);
 //# sourceMappingURL=all.js.map

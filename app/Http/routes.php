@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/henchmen', function () {
-    return view('welcome');
-});
+Route::get('/getHenchmen', 'HenchmenController@getHenchmen');
+
+Route::any('{all}', function($uri)
+{
+    return View::make('layouts.master');
+})->where('all', '.*');
 
