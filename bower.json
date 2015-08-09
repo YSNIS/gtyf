@@ -1,0 +1,17 @@
+{
+  "name": "gtyf",
+  "version": "0.0.0",
+  "homepage": "https://github.com/YSNIS/gtyf",
+  "authors": [
+    "Jacob Fleisher <jfleish1@gmail.com>"
+  ],
+  "description": "The International Henchmen Database",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
