@@ -13,8 +13,8 @@
 
 Route::get('/getHenchmen', 'HenchmenController@getHenchmen');
 
-Route::get('/', function()
+Route::get('{all}', function($uri)
 {
     return View::make('layouts.master');
-});
+})->where('all', '.*');
 
