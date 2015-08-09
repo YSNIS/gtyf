@@ -13,8 +13,8 @@
 <body ng-app="app">
 	<div class="container">
 		<!-- HEADER -->
-		<div class="page-header" ng-include src="'partials/header.blade.php'">
-		</div>
+		<!-- <div class="page-header" ng-include src="'partials/header.blade.php'">
+		</div> -->
 		<!-- Success Message -->
 		@if (Session::has('success'))
 			<div>class="alert alert-success">
