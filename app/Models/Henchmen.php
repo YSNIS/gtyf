@@ -11,7 +11,8 @@ namespace App\Models;
 
 
 		public static function getHenchmen() {
-			return Henchmen::all();
+			return 'hi';
+			// return Henchmen::all();
 		}
 
 	}
