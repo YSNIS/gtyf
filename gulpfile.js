@@ -17,4 +17,4 @@ elixir(function(mix) {
 
 elixir(function(mix) {
     mix.scriptsIn("resources/assets/scripts/", "public/scripts");
-});
+});	
