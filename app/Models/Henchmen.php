@@ -14,6 +14,19 @@ namespace App\Models;
 			return Henchmen::all();
 		}
 
+		public static function createHenchmen($name) {
+			$henchmen = new Henchmen;
+			$henchmen->name = $name;
+			$henchmen->save();
+			return $henchmen;
+		}
+
+		public static function deleteHenchmen($id) {
+			$henchmen = Henchmen::find($id);
+			$henchmen->delete();
+			return Henchmen::all();
+		}
+
 	}
 
 ?>

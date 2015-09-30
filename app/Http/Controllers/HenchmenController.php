@@ -92,4 +92,15 @@ class HenchmenController extends Controller
     {
         return Henchmen::getHenchmen();
     }
+
+    // Get all Henchmen
+    public function createHenchmen($name)
+    {
+        return Henchmen::createHenchmen($name);
+    }
+
+    public function deleteHenchmen($id)
+    {
+        return Henchmen::deleteHenchmen($id);
+    }
 }

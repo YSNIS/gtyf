@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/getHenchmen', 'HenchmenController@getHenchmen');
+// Getting and Creating Henchmen
+Route::get('/henchmen', 'HenchmenController@getHenchmen');
+Route::post('/henchmen/{name}', 'HenchmenController@createHenchmen');
+Route::delete('/henchmen/{name}', 'HenchmenController@deleteHenchmen');
 
 Route::get('{all}', function($uri)
 {
